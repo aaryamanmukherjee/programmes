@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  9 11:39:43 2020
+
+@author: aaryamanm
+"""
+
+#simple calculator
+#add
+
+def add(x,y):
+    return x + y
+
+#subtract
+
+def subtract(x,y):
+    return x-y
+
+#divide
+
+def divide(x,y):
+    return x/y
+
+#multiply
+
+def multiply(x,y):
+    return x*y
+#option le
+    
+print('select an option')
+print('1.add')
+print('2.subtract')
+print('3.divide')
+print('4.multiply')
+
+while True:
+    choice = input('enter choice(1/2/3/4):')
+
+    #choice
+    if choice in('1','2','3','4'):
+        num1 = float(input('please enter the first number:'))
+        num2 = float(input('please enter the second number:'))
+        
+        
+        if choice == '1':
+            print(num1, '+',num2,'=', add(num1, num2))
+            
+        elif choice == '2':
+            print(num1, '-',num2,'=',subtract(num1, num2))
+            
+        elif choice =='3':
+            print(num1, '/',num2,'=',divide(num1, num2))
+            
+        elif choice == '4':
+            print(num1, '*',num2,'=',multiply(num1, num2))
+        break
+    else:
+        print("invalid input")
